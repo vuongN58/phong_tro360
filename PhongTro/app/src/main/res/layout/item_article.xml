@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivArticle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_moto"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/roundedCorners" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="wqelrkhweojrhwejkrhewjkrhewjrkhwejrhewrewjrhwejrhjwerew"
+        android:textColor="@color/main" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:maxLines="2"
+        android:text="wqelrkhweojrhwejkrhewjkrhewjrkhwejrhewrewjrhwejrhjwerewwqelrkhweojrhwejkrhewjkrhewjrkhwejrhewrewjrhwejrhjwerewwqelrkhweojrhwejkrhewjkrhewjrkhwejrhewrewjrhwejrhjwerewwqelrkhweojrhwejkrhewjkrhewjrkhwejrhewrewjrhwejrhjwerewwqelrkhweojrhwejkrhewjkrhewjrkhwejrhewrewjrhwejrhjwerew"
+        android:textColor="@color/grey_color" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_home_home"
+        android:id="@+id/homeFragment"
+        android:title="@string/nhatro360"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_search_home"
+        android:enabled="true"
+        android:id="@+id/searchFragment"
+        android:title="@string/timkiemhome"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_article"
+        android:enabled="true"
+        android:id="@+id/articlesFragment"
+        android:title="@string/article_title"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_profile_home"
+        android:enabled="true"
+        android:id="@+id/accountFragment"
+        android:title="@string/taikhoan"
+        app:showAsAction="ifRoom"/>
+</menu>

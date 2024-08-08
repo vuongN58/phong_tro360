@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".presentation.search.dialog.FilterBottomSheet">
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        style="@style/TextAppearance.AppCompat.Caption"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/sortprice" />-->
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/sortByTabLayout1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/bg_filter_selector"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:tabBackground="@drawable/bg_tab_state"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorColor="@null"-->
+<!--        app:tabIndicatorHeight="0dp"-->
+<!--        app:tabMode="fixed"-->
+<!--        app:tabRippleColor="@null"-->
+<!--        app:tabSelectedTextColor="@color/white">-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabSortByAll"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/all" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabRentRoom"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/emptyroom" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabSharedRoom"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/share_rooms" />-->
+
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        style="@style/TextAppearance.AppCompat.Caption"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="@string/typeroom" />-->
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/typeTablayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/bg_filter_selector"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:tabBackground="@drawable/bg_tab_state"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorColor="@null"-->
+<!--        app:tabIndicatorHeight="0dp"-->
+<!--        app:tabMode="fixed"-->
+<!--        app:tabRippleColor="@null"-->
+<!--        app:tabSelectedTextColor="@color/white">-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabTypeAll"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/all" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabApartment"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/emptyroom" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabMiniApartment"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/share_rooms" />-->
+
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabHouse"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/share_rooms" />-->
+
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        style="@style/TextAppearance.AppCompat.Caption"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="@string/sortprice" />-->
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/sortByTabLayout2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/bg_filter_selector"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:tabBackground="@drawable/bg_tab_state"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorColor="@null"-->
+<!--        app:tabIndicatorHeight="0dp"-->
+<!--        app:tabMode="fixed"-->
+<!--        app:tabRippleColor="@null"-->
+<!--        app:tabSelectedTextColor="@color/white">-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/newestTab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/time_lasted" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/increasingTab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/giatuthaplencao" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/decreasingTab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/giatucaoxuongthap" />-->
+
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/price" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/priceRangeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:text="@string/price" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/priceRangeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="1.0"
+        android:valueTo="20.0"
+        android:layout_marginTop="8dp"
+        android:background="@color/main"
+        app:values="@array/price_range"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sizeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/price" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/areaRangeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="10.0"
+        android:valueTo="100.0"
+        android:layout_marginTop="8dp"
+        android:background="@color/main"
+        app:values="@array/size_range"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="8dp"
+            android:gravity="center"
+            android:textColor="@color/main"
+            android:background="@drawable/bg_blue_stroke"
+            android:text="@string/dong"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvApply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/main"
+            android:textColor="@color/white"
+            android:paddingVertical="8dp"
+            android:text="@string/apdung"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
